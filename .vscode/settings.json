@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "miniconda"
-    ]
+    ],
+    "cmake.configureOnOpen": false
 }
