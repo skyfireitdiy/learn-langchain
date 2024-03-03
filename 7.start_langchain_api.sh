@@ -1,4 +1,4 @@
 #!/bin/bash
-. parse_model_name.sh
+model_name=$1
 cd 3rd/chatglm.cpp
-MODEL=../../${model_name}-${size}-ggml.bin uvicorn chatglm_cpp.langchain_api:app --host 127.0.0.1 --port 8000
+MODEL=../../${model_name} uvicorn chatglm_cpp.langchain_api:app --host 127.0.0.1 --port 8000

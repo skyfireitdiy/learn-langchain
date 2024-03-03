@@ -1,4 +1,4 @@
 #!/bin/bash
-. parse_model_name.sh
+module_name=$1
 cd 3rd/chatglm.cpp
-./build/bin/main -m ../../${model_name}-${size}-ggml.bin -i
+./build/bin/main -m ../../$module_name -i
