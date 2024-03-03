@@ -1,3 +1,3 @@
 #!/bin/bash
 . parse_model_name.sh
-python3 3rd/chatglm.cpp/chatglm_cpp/convert.py -i models/THUDM/${model_name} -t q8_0 -o 3rd/chatglm.cpp/${model_name}-ggml.bin
+python3 3rd/chatglm.cpp/chatglm_cpp/convert.py -i THUDM/${model_name} -t ${size} -o ${model_name}-${size}-ggml.bin

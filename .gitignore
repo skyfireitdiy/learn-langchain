@@ -1,3 +1,6 @@
 __pycache__
 config.ini
 models
+build
+THUDM
+*.bin
